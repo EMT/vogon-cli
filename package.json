@@ -1,0 +1,42 @@
+{
+  "name": "@vogonapp/cli",
+  "version": "1.0.0",
+  "description": "CLI tool for Vogon translation management",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "vogon": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "cli",
+    "translation management",
+    "vogon",
+    "push translations",
+    "pull translations",
+    "localization",
+    "i18n",
+    "json",
+    "typescript"
+  ],
+  "author": "Vogon",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

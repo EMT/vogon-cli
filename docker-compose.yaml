@@ -1,0 +1,13 @@
+services:
+  vogon-cli:
+    build: .
+    container_name: vogon-cli
+    environment:
+      - API_ENDPOINT=${API_ENDPOINT}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+      - PROJECT_ID=${PROJECT_ID}
+      - UPLOAD_FILE_PATH=${UPLOAD_FILE_PATH}
+    volumes:
+      - .:/app
+
+    command: npm run dev
