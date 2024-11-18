@@ -9,5 +9,6 @@ services:
       - UPLOAD_FILE_PATH=${UPLOAD_FILE_PATH}
     volumes:
       - .:/app
+      - ./npm-logs:/root/.npm/_logs/
 
     command: npm run dev

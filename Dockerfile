@@ -8,6 +8,8 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
+COPY tsconfig.json ./
+COPY src ./src
 
 # Install dependencies
 RUN npm install
